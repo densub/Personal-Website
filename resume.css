@@ -1,0 +1,258 @@
+
+        * {
+            box-sizing: border-box
+        }
+        
+        main {
+            display: block
+        }
+        
+        body {
+            font-size: 15px;
+            color: black;
+            line-height: 1.42857143;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            font-family: 'Open Sans', 'Helvetica Neue', Helvetica, 'Segoe UI', Calibri, sans-serif
+        }
+        
+        body.pdf {
+            background-color: #fff
+        }
+        
+        #main {
+            background-color: #fff;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #e6e6e6
+        }
+        
+        body.pdf>#main {
+            border: none
+        }
+        
+        #container>header {
+            padding-top: 6em;
+            padding-bottom: 1em
+        }
+        
+        body.pdf #container>header {
+            padding: 0
+        }
+        
+        #main>#container>section {
+            margin-left: 150px;
+            position: relative;
+            display: block
+        }
+        
+        section>div {
+            margin-bottom: 60px
+        }
+        
+        span.fa {
+            font-size: 56px;
+            position: absolute;
+            top: 37px;
+            transform: translateY(-50%);
+            left: -100px;
+            color: orange
+        }
+        
+        hr {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border: 0;
+            border-top: 1px solid #eee
+        }
+        
+        .keywords,
+        .tenure {
+            font-size: 75%
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 46px;
+            display: inline-block
+        }
+        
+        h2 {
+            font-size: 30px;
+            color: black;
+            text-transform: uppercase;
+            font-weight: 400;
+            padding-top: 20px;
+            margin-bottom: 60px
+        }
+        
+        h3 {
+            margin-bottom: 0;
+            font-size: 18px
+        }
+        
+        a,
+        a:visited {
+            color: orange;
+            text-decoration: none;
+            font-weight: 700
+        }
+        
+        a:hover {
+            text-decoration: underline
+        }
+        
+        .defunct {
+            color: #989898;
+            font-weight: 700
+        }
+        
+        #summary {
+            font-size: 150%;
+            margin-left: 0;
+            padding: 20px 0
+        }
+        
+        #summary>p>strong {
+            font-size: 1.25em
+        }
+        
+        #contact {
+            float: right
+        }
+        
+        #summary>header>.fa-info {
+            font-size: 70px;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            font-weight: 400;
+            top: 50%;
+            left: -85px;
+            transform: translateY(-50%)
+        }
+        
+        #summary h2 {
+            display: none
+        }
+        
+        .label-keyword {
+            display: inline-block;
+            background: #e8f4ff;
+            color: #000;
+            font-size: .9em;
+            padding: 5px;
+            border: 1px solid orange;
+            border-radius: 5px;
+            margin-top: 2px;
+            font-weight: 700;
+            text-align: center
+        }
+        
+        .notes {
+            font-size: 10px;
+            display: block;
+            font-weight: 400;
+            text-transform: uppercase
+        }
+        
+        .card-skills {
+            position: relative
+        }
+        
+        .card-nested {
+            min-height: 0;
+            margin-bottom: 10px;
+            border-width: 1px 0 0 0
+        }
+        
+        .card {
+            background: #fff;
+            border-radius: 3px;
+            padding: 10px
+        }
+        
+        .skill-level {
+            border-radius: 3px;
+            position: absolute;
+            top: 10px;
+            bottom: 10px;
+            left: 0;
+            width: 10px;
+            box-shadow: inset 0 0 1px rgba(0, 0, 0, .5)
+        }
+        
+        .skill-level .skill-progress {
+            position: absolute;
+            border-radius: 3px;
+            bottom: 0;
+            width: 100%;
+        
+        }
+        
+        .skill-level .skill-progress.beginner {
+            height: 50%;
+            background: #e74c3c
+        }
+        
+        .skill-level .skill-progress.intermediate {
+            height: 70%;
+            background: #f1c40f
+        }
+        
+        .skill-level .skill-progress.advanced {
+            height: 80%;
+            background: orange
+        }
+        
+        .skill-level .skill-progress.master {
+            height: 95%;
+            background: #5cb85c
+        }
+        
+        .skill-info {
+            margin-left: 10px
+        }
+        
+        @media (max-width:480px) {
+            .skill-info {
+                margin-left: 20px
+            }
+        }
+        
+        .skill-info>strong {
+            font-weight: 400;
+            font-size: 24px;
+            color: #1d1d1d;
+            line-height: 24px
+        }
+        
+        .list-unstyled {
+            padding-left: 0;
+            list-style: none
+        }
+        
+        .card-skills {
+            position: relative
+        }
+        
+        .space-top {
+            margin-top: 5px
+        }
+        
+        #container {
+            max-width: 800px;
+            margin: 0 auto
+        }
+        
+        #elevator-pitch {
+            text-align: center;
+            font-size: 24px;
+            color: #bfc1c3;
+            text-transform: uppercase;
+            font-weight: 400
+        }
+        
+        .res-label {
+            font-style: italic
+        }
