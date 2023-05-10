@@ -52,6 +52,81 @@
   </div>
 </div>
 
+<!-- <button class="open-button" onclick="openForm()">Contact Me</button> -->
+
+<!-- <div class="chat-popup" id="myForm">
+  <form class="form-container">
+    <h1>Chat</h1>
+
+    <input type="text" placeholder="Name" id="name" name="name">
+    <input type="text" placeholder="Type message.." id="message" name="message">
+    <input type="text" placeholder="Email/Phone Number" id="contact" name="contact">
+    <button type="button" class="btn" onclick="sendChat()">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div> -->
+
+<button class="open-contact-form" onclick="openForm()">Contact Me</button>
+
+<div class="contact-form-container" id="myForm">
+  <div class="contact-form">
+    <a class="close-contact-form" onclick="closeForm()"></a>
+    <h2>Contact Me</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your name">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Your email">
+
+      <label for="subject">Subject:</label>
+      <input type="text" id="subject" name="subject" placeholder="Subject">
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" placeholder="Your message"></textarea>
+
+      <button type="button" class="btn" onclick="sendChat()">Send</button>
+    </form>
+  </div>
+</div>
+
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+
+
+
+</script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript">
+    (function() {
+        emailjs.init('Exxndk2f7KdvTywlu');
+    })();
+function sendChat() {
+  emailjs.send('service_wpzlv2r', 'template_w8dp0pn', {
+    name: document.getElementById('name').value,
+    email: document.getElementById('email').value,
+    subject: document.getElementById('subject').value,
+    message: document.getElementById('message').value
+  })
+  .then(function(response) {
+    document.getElementById("myForm").style.display = "none";
+    // alert('Message Sent Succesfully')
+    // console.log("Email sent successfully!", response.status, response.text);
+  }, function(error) {
+    // console.log("Error sending email:", error);
+    alert('Error')
+  });
+}
+</script>
+
 </body>
 
 </html>
